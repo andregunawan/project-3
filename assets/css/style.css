@@ -298,7 +298,7 @@ a.button2:hover {
     Buttons
 *******************/
 
-.love {
+.small-btn {
   box-shadow: 1px 1px 0 rgba(255,255,255,0.5) inset;
   border-radius: 3px;
   border: 1px solid;
@@ -336,7 +336,7 @@ a.button2:hover {
 /*
  * Custom styles
  */
-.love {
+.small-btn {
   background-color: #dbdbdb;
   border-color: #bbb;
   color: #666;
