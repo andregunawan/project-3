@@ -11,7 +11,7 @@
     <link href='https://api.mapbox.com/mapbox-gl-js/v0.44.0/mapbox-gl.css' rel='stylesheet' />
     <script src='https://api.mapbox.com/mapbox-gl-js/v0.44.0/mapbox-gl.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
-<!--     <script src='//production-assets.codepen.io/assets/editor/live/console_runner-079c09a0e3b9ff743e39ee2d5637b9216b3545af0de366d4b9aad9dc87e26bfd.js'></script><script src='//production-assets.codepen.io/assets/editor/live/events_runner-73716630c22bbc8cff4bd0f07b135f00a0bdc5d14629260c3ec49e5606f98fdd.js'></script><script src='//production-assets.codepen.io/assets/editor/live/css_live_reload_init-2c0dc5167d60a5af3ee189d570b1835129687ea2a61bee3513dee3a50c115a77.js'></script><meta charset='UTF-8'><meta name="robots" content="noindex"><link rel="shortcut icon" type="image/x-icon" href="//production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" /><link rel="mask-icon" type="" href="//production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" /><link rel="canonical" href="https://codepen.io/klesht/pen/YPzmmm?limit=all&page=25&q=image" /> -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css'><link rel='stylesheet prefetch' href='//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'><link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=McLaren|Open+Sans:600'>
  
 
@@ -53,7 +53,7 @@
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search">
         </div>
-        <button type="submit" class="btn btn-default" style="height: 34px !important; width: 23%;">Submit</button>
+        <button type="submit" class="btn btn-default">Submit</button>
       </form>
       <ul class="nav navbar-nav navbar-right">
         <li><p class="navbar-text">Already have an account?</p></li>
@@ -103,20 +103,258 @@
 
 <div id='map' style='width: 100%; height: 93%; top: 7%;'></div>
 
-<div class="row" style="position: relative;">
-  <div class="col-md-4 listing-block">
+<!-- <div class="row">
+  <div class="col-md-4" style="margin-left: 3%; margin-bottom: 10px;">
+    <a href="#" class="button" style="display: inline;">New List</a>
+    <a href="#" class="button2" style="display: inline;">Explore</a>   
+  </div>
+  <div class="col-md-8"></div>
+</div> -->
 
+<!-- EXPLORE PAGE -->
+
+<div class="row" style="position: relative;">
+  <div class="col-md-5 listing-block">
+    <div class='results'>
+
+      <article>
+        <header>
+          <h3><span>EXPLORE - LOS ANGELES</span></h3>
+        </header>
+      </article>
+    </div>
+
+    <div class='results'>
+      <article>
+        <header>
+          <h3><i class="fas fa-utensils" style="float: left;"></i><span style="margin-left: -5%;">FOOD</span></h3>
+        </header>
+        <div class='excerpt'>
+          <div class="row" style="position: relative;">
+            <div class="col-md-12 listing-block-list">
+
+              <div class='results-list'>
+                <article>
+                  <header>
+                  </header>
+                  <div class='row'>
+                    <div class="col-md-5">
+                      <img style="width: 100%; margin-top: 10%;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/151010_Sapporo_ramen_at_Susukino_Sapporo_Hokkaido_Japan01s.jpg/270px-151010_Sapporo_ramen_at_Susukino_Sapporo_Hokkaido_Japan01s.jpg">
+                    </div>
+                    <div class="col-md-7">
+                      <h4>Top 15 Ramen in Los Angeles</h4>
+                      <h5><i class="fas fa-user"></i> : Bruce Wayne</h5>
+                    </div>
+                  </div>
+                  <button title="Edit" style="background: transparent; border: 0px; display: inline; float: right; margin-top: -20px;"><i class="fas fa-pencil-alt"></i></button>
+                  <div class="row" style="border-top: 2px solid #9bb068; text-align: center; margin:0px !important; margin-top:20px !important"></div>
+                </article>
+              </div>
+
+              <div class='results-list'>
+                <article>
+                  <header>
+                  </header>
+                  <div class='row'>
+                    <div class="col-md-5">
+                      <img style="width: 100%; margin-top: 10%;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/151010_Sapporo_ramen_at_Susukino_Sapporo_Hokkaido_Japan01s.jpg/270px-151010_Sapporo_ramen_at_Susukino_Sapporo_Hokkaido_Japan01s.jpg">
+                    </div>
+                    <div class="col-md-7">
+                      <h4>Top 15 Ramen in Los Angeles</h4>
+                      <h5><i class="fas fa-user"></i> : Bruce Wayne</h5>
+                    </div>
+                  </div>
+                  <button title="Edit" style="background: transparent; border: 0px; display: inline; float: right; margin-top: -20px;"><i class="fas fa-pencil-alt"></i></button>
+                  <div class="row" style="border-top: 2px solid #9bb068; text-align: center; margin:0px !important; margin-top:20px !important"></div>
+                </article>
+              </div>
+
+              <div class='results-list'>
+                <article>
+                  <header>
+                  </header>
+                  <div class='row'>
+                    <div class="col-md-5">
+                      <img style="width: 100%; margin-top: 10%;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/151010_Sapporo_ramen_at_Susukino_Sapporo_Hokkaido_Japan01s.jpg/270px-151010_Sapporo_ramen_at_Susukino_Sapporo_Hokkaido_Japan01s.jpg">
+                    </div>
+                    <div class="col-md-7">
+                      <h4>Top 15 Ramen in Los Angeles</h4>
+                      <h5><i class="fas fa-user"></i> : Bruce Wayne</h5>
+                    </div>
+                  </div>
+                  <button title="Edit" style="background: transparent; border: 0px; display: inline; float: right; margin-top: -20px;"><i class="fas fa-pencil-alt"></i></button>
+                  <div class="row" style="border-top: 2px solid #9bb068; text-align: center; margin:0px !important; margin-top:20px !important"></div>
+                </article>
+              </div>
+
+              <div class='results-list'>
+                <article>
+                  <header>
+                  </header>
+                  <div class='row'>
+                    <div class="col-md-5">
+                      <img style="width: 100%; margin-top: 10%;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/151010_Sapporo_ramen_at_Susukino_Sapporo_Hokkaido_Japan01s.jpg/270px-151010_Sapporo_ramen_at_Susukino_Sapporo_Hokkaido_Japan01s.jpg">
+                    </div>
+                    <div class="col-md-7">
+                      <h4>Top 15 Ramen in Los Angeles</h4>
+                      <h5><i class="fas fa-user"></i> : Bruce Wayne</h5>
+                    </div>
+                  </div>
+                  <button title="Edit" style="background: transparent; border: 0px; display: inline; float: right; margin-top: -20px;"><i class="fas fa-pencil-alt"></i></button>
+                  <div class="row" style="border-top: 2px solid #9bb068; text-align: center; margin:0px !important; margin-top:20px !important"></div>
+                </article>
+              </div>
+
+              <div class='results-list'>
+                <article>
+                  <header>
+                  </header>
+                  <div class='row'>
+                    <div class="col-md-5">
+                      <img style="width: 100%; margin-top: 10%;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/151010_Sapporo_ramen_at_Susukino_Sapporo_Hokkaido_Japan01s.jpg/270px-151010_Sapporo_ramen_at_Susukino_Sapporo_Hokkaido_Japan01s.jpg">
+                    </div>
+                    <div class="col-md-7">
+                      <h4>Top 15 Ramen in Los Angeles</h4>
+                      <h5><i class="fas fa-user"></i> : Bruce Wayne</h5>
+                    </div>
+                  </div>
+                  <button title="Edit" style="background: transparent; border: 0px; display: inline; float: right; margin-top: -20px;"><i class="fas fa-pencil-alt"></i></button>
+                  <div class="row" style="border-top: 2px solid #9bb068; text-align: center; margin:0px !important; margin-top:20px !important"></div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row" style="border-top: 2px solid #9bb068; text-align: center; margin:0px !important; margin-top:20px !important"></div>
+      </article>
+    </div>
+
+    <div class='results'>
+      <article>
+        <header>
+          <h3><i class="fas fa-coffee" style="float: left;"></i><span style="margin-left: -5%;">CAFE</span></h3>
+        </header>
+        <div class='excerpt'>
+          <div class="row" style="position: relative;">
+            <div class="col-md-12 listing-block-list">
+
+              <div class='results-list'>
+                <article>
+                  <header>
+                  </header>
+                  <div class='row'>
+                    <div class="col-md-5">
+                      <img style="width: 100%; margin-top: 10%;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/151010_Sapporo_ramen_at_Susukino_Sapporo_Hokkaido_Japan01s.jpg/270px-151010_Sapporo_ramen_at_Susukino_Sapporo_Hokkaido_Japan01s.jpg">
+                    </div>
+                    <div class="col-md-7">
+                      <h4>Top 15 Ramen in Los Angeles</h4>
+                      <h5><i class="fas fa-user"></i> : Bruce Wayne</h5>
+                    </div>
+                  </div>
+                  <button title="Edit" style="background: transparent; border: 0px; display: inline; float: right; margin-top: -20px;"><i class="fas fa-pencil-alt"></i></button>
+                  <div class="row" style="border-top: 2px solid #9bb068; text-align: center; margin:0px !important; margin-top:20px !important"></div>
+                </article>
+              </div>
+
+              <div class='results-list'>
+                <article>
+                  <header>
+                  </header>
+                  <div class='row'>
+                    <div class="col-md-5">
+                      <img style="width: 100%; margin-top: 10%;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/151010_Sapporo_ramen_at_Susukino_Sapporo_Hokkaido_Japan01s.jpg/270px-151010_Sapporo_ramen_at_Susukino_Sapporo_Hokkaido_Japan01s.jpg">
+                    </div>
+                    <div class="col-md-7">
+                      <h4>Top 15 Ramen in Los Angeles</h4>
+                      <h5><i class="fas fa-user"></i> : Bruce Wayne</h5>
+                    </div>
+                  </div>
+                  <button title="Edit" style="background: transparent; border: 0px; display: inline; float: right; margin-top: -20px;"><i class="fas fa-pencil-alt"></i></button>
+                  <div class="row" style="border-top: 2px solid #9bb068; text-align: center; margin:0px !important; margin-top:20px !important"></div>
+                </article>
+              </div>
+
+              <div class='results-list'>
+                <article>
+                  <header>
+                  </header>
+                  <div class='row'>
+                    <div class="col-md-5">
+                      <img style="width: 100%; margin-top: 10%;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/151010_Sapporo_ramen_at_Susukino_Sapporo_Hokkaido_Japan01s.jpg/270px-151010_Sapporo_ramen_at_Susukino_Sapporo_Hokkaido_Japan01s.jpg">
+                    </div>
+                    <div class="col-md-7">
+                      <h4>Top 15 Ramen in Los Angeles</h4>
+                      <h5><i class="fas fa-user"></i> : Bruce Wayne</h5>
+                    </div>
+                  </div>
+                  <button title="Edit" style="background: transparent; border: 0px; display: inline; float: right; margin-top: -20px;"><i class="fas fa-pencil-alt"></i></button>
+                  <div class="row" style="border-top: 2px solid #9bb068; text-align: center; margin:0px !important; margin-top:20px !important"></div>
+                </article>
+              </div>
+
+              <div class='results-list'>
+                <article>
+                  <header>
+                  </header>
+                  <div class='row'>
+                    <div class="col-md-5">
+                      <img style="width: 100%; margin-top: 10%;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/151010_Sapporo_ramen_at_Susukino_Sapporo_Hokkaido_Japan01s.jpg/270px-151010_Sapporo_ramen_at_Susukino_Sapporo_Hokkaido_Japan01s.jpg">
+                    </div>
+                    <div class="col-md-7">
+                      <h4>Top 15 Ramen in Los Angeles</h4>
+                      <h5><i class="fas fa-user"></i> : Bruce Wayne</h5>
+                    </div>
+                  </div>
+                  <button title="Edit" style="background: transparent; border: 0px; display: inline; float: right; margin-top: -20px;"><i class="fas fa-pencil-alt"></i></button>
+                  <div class="row" style="border-top: 2px solid #9bb068; text-align: center; margin:0px !important; margin-top:20px !important"></div>
+                </article>
+              </div>
+
+              <div class='results-list'>
+                <article>
+                  <header>
+                  </header>
+                  <div class='row'>
+                    <div class="col-md-5">
+                      <img style="width: 100%; margin-top: 10%;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/151010_Sapporo_ramen_at_Susukino_Sapporo_Hokkaido_Japan01s.jpg/270px-151010_Sapporo_ramen_at_Susukino_Sapporo_Hokkaido_Japan01s.jpg">
+                    </div>
+                    <div class="col-md-7">
+                      <h4>Top 15 Ramen in Los Angeles</h4>
+                      <h5><i class="fas fa-user"></i> : Bruce Wayne</h5>
+                    </div>
+                  </div>
+                  <button title="Edit" style="background: transparent; border: 0px; display: inline; float: right; margin-top: -20px;"><i class="fas fa-pencil-alt"></i></button>
+                  <div class="row" style="border-top: 2px solid #9bb068; text-align: center; margin:0px !important; margin-top:20px !important"></div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row" style="border-top: 2px solid #9bb068; text-align: center; margin:0px !important; margin-top:20px !important"></div>
+      </article>
+    </div>
+
+
+
+
+  </div>
+  <div class="col-md-8"></div>
+</div>
+
+<!-- CREATE / CREATED LISTS -->
+
+<!-- <div class="row" style="position: relative;">
+  <div class="col-md-4 listing-block">
     <div class='results'>
       <div class='featured-image'>
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
           <ol class="carousel-indicators">
             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
             <li data-target="#carousel-example-generic" data-slide-to="1"></li>
             <li data-target="#carousel-example-generic" data-slide-to="2"></li>
           </ol>
 
-          <!-- Wrapper for slides -->
+
           <div class="carousel-inner">
             <div class="item active">
               <img src='https://www.soelden.com/urlaub/images/SD/WI/headerbilder/aktivitaeten_header_restaurant,method=scale,prop=data,id=1200-510.jpg' alt="...">
@@ -129,7 +367,7 @@
             </div>
           </div>
 
-          <!-- Controls -->
+
           <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left"></span>
           </a>
@@ -145,9 +383,8 @@
         </header>
         <div class='excerpt'>
           <p>Los Angeles has plenty of sweet shops, cake spots, and bakeries around the city, many adopting styles and flavors from around the world. It's perhaps the best trademark of LA's approach to baking: it's not tied to any particular style, such as classic European. Instead, you get a wonderful amalgam of Asian influence in pastries (which is welcome, because they tend not to be as sweet) to glorious Mexican panaderias, which offer the perfect starters to every morning.</p>
-<!--           <a href='#'><span class='fa fa-arrow-circle-right'></span><span>Show me some recipes</span></a> -->
           
-            <a href="#" title="Love it" class="btn btn-counter" data-count="23"><span><i class="fa fa-heart"></i></span></a>
+            <a href="#" title="Love it" class="love love-counter" data-count="23"><span><i class="fa fa-heart"></i></span></a>
             <button title="Favorite" style="background: transparent; border: 0px; display: inline; float: right; margin-top: -20px;"><i class="fa fa-bookmark"></i></button>
             <button title="Edit" style="background: transparent; border: 0px; display: inline; float: right; margin-top: -20px;"><i class="fa fa-pencil"></i></button>
           </div>
@@ -163,14 +400,14 @@
     <div class='results'>
       <div class='featured-image'>
         <div id="carousel-example-generic-1" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
+
           <ol class="carousel-indicators">
             <li data-target="#carousel-example-generic-1" data-slide-to="0" class="active"></li>
             <li data-target="#carousel-example-generic-1" data-slide-to="1"></li>
             <li data-target="#carousel-example-generic-1" data-slide-to="2"></li>
           </ol>
 
-          <!-- Wrapper for slides -->
+
           <div class="carousel-inner">
             <div class="item active">
               <img src='https://www.soelden.com/urlaub/images/SD/WI/headerbilder/aktivitaeten_header_restaurant,method=scale,prop=data,id=1200-510.jpg' alt="...">
@@ -183,7 +420,7 @@
             </div>
           </div>
 
-          <!-- Controls -->
+
           <a class="left carousel-control" href="#carousel-example-generic-1" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left"></span>
           </a>
@@ -208,14 +445,14 @@
     <div class='results'>
       <div class='featured-image'>
         <div id="carousel-example-generic-2" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
+
           <ol class="carousel-indicators">
             <li data-target="#carousel-example-generic-2" data-slide-to="0" class="active"></li>
             <li data-target="#carousel-example-generic-2" data-slide-to="1"></li>
             <li data-target="#carousel-example-generic-2" data-slide-to="2"></li>
           </ol>
 
-          <!-- Wrapper for slides -->
+
           <div class="carousel-inner">
             <div class="item active">
               <img src='https://www.soelden.com/urlaub/images/SD/WI/headerbilder/aktivitaeten_header_restaurant,method=scale,prop=data,id=1200-510.jpg' alt="...">
@@ -228,7 +465,7 @@
             </div>
           </div>
 
-          <!-- Controls -->
+
           <a class="left carousel-control" href="#carousel-example-generic-2" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left"></span>
           </a>
@@ -253,14 +490,14 @@
     <div class='results'>
       <div class='featured-image'>
         <div id="carousel-example-generic-3" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
+
           <ol class="carousel-indicators">
             <li data-target="#carousel-example-generic-3" data-slide-to="0" class="active"></li>
             <li data-target="#carousel-example-generic-3" data-slide-to="1"></li>
             <li data-target="#carousel-example-generic-3" data-slide-to="2"></li>
           </ol>
 
-          <!-- Wrapper for slides -->
+
           <div class="carousel-inner">
             <div class="item active">
               <img src='https://www.soelden.com/urlaub/images/SD/WI/headerbilder/aktivitaeten_header_restaurant,method=scale,prop=data,id=1200-510.jpg' alt="...">
@@ -273,7 +510,7 @@
             </div>
           </div>
 
-          <!-- Controls -->
+
           <a class="left carousel-control" href="#carousel-example-generic-3" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left"></span>
           </a>
@@ -298,14 +535,14 @@
     <div class='results'>
       <div class='featured-image'>
         <div id="carousel-example-generic-4" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
+
           <ol class="carousel-indicators">
             <li data-target="#carousel-example-generic-4" data-slide-to="0" class="active"></li>
             <li data-target="#carousel-example-generic-4" data-slide-to="1"></li>
             <li data-target="#carousel-example-generic-4" data-slide-to="2"></li>
           </ol>
 
-          <!-- Wrapper for slides -->
+
           <div class="carousel-inner">
             <div class="item active">
               <img src='https://www.soelden.com/urlaub/images/SD/WI/headerbilder/aktivitaeten_header_restaurant,method=scale,prop=data,id=1200-510.jpg' alt="...">
@@ -318,7 +555,7 @@
             </div>
           </div>
 
-          <!-- Controls -->
+
           <a class="left carousel-control" href="#carousel-example-generic-4" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left"></span>
           </a>
@@ -351,7 +588,8 @@
 
   </div>
   <div class="col-md-8"></div>
-</div>
+</div> -->
+
 
 
 

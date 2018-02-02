@@ -75,45 +75,47 @@ body, html{
 ********************/
 
 #login-dp{
-    min-width: 250px;
-    padding: 14px 14px 0;
-    overflow:hidden;
-    background-color:rgba(255,255,255,.8);
+    min-width: 250px !important;
+    padding: 14px 14px 0 !important; 
+    overflow:hidden !important;
+    background-color:rgba(255,255,255,.8) !important;
 }
 #login-dp .help-block{
-    font-size:12px    
+    font-size:12px !important    
 }
 #login-dp .bottom{
-    background-color:rgba(255,255,255,.8);
-    border-top:1px solid #ddd;
-    clear:both;
-    padding:14px;
+    background-color:rgba(255,255,255,.8) !important;
+    border-top:1px solid #ddd !important;
+    clear:both !important;
+    padding:14px !important;
 }
 #login-dp .social-buttons{
-    margin:12px 0    
+    margin:12px 0 !important    
 }
 #login-dp .social-buttons a{
-    width: 49%;
+    width: 49% !important;
 }
 #login-dp .form-group {
-    margin-bottom: 10px;
+    margin-bottom: 10px !important;
 }
 .btn-fb{
-    color: #fff;
-    background-color:#3b5998;
+    color: #fff !important;
+    background-color:#3b5998 !important;
 }
 .btn-fb:hover{
-    color: #fff;
-    background-color:#496ebc 
+    color: #fff !important;
+    background-color:#496ebc !important 
 }
 .btn-tw{
-    color: #fff;
-    background-color:#55acee;
+    color: #fff !important;
+    background-color:#55acee !important;
 }
 .btn-tw:hover{
-    color: #fff;
-    background-color:#59b5fa;
+    color: #fff !important;
+    background-color:#59b5fa !important;
 }
+
+
 
 /********************
     GEOLOCATION
@@ -123,6 +125,44 @@ body { margin:0; padding:0; }
 #map { position:absolute; top:0; bottom:0; width:100%; }
 
 /*******************
+    BUTTON
+*******************/
+
+a {
+  -webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  -moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  -ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  display: block;
+  /*margin: 20px auto;*/
+  max-width: 180px;
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 10px 30px;
+}
+
+a.button {
+  color: rgba(30, 22, 54, 0.6);
+  box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;
+}
+
+a.button:hover {
+  color: rgba(255, 255, 255, 0.85);
+  box-shadow: rgba(30, 22, 54, 0.7) 0 0px 0px 40px inset;
+}
+
+a.button2 {
+  color: rgba(30, 22, 54, 0.6);
+  box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;
+}
+
+a.button2:hover {
+  color: rgba(255, 255, 255, 0.85);
+  box-shadow: rgba(30, 22, 54, 0.7) 0 80px 0px 2px inset;
+}
+
+/*******************
     Results 
 ********************/
 
@@ -130,12 +170,27 @@ body { margin:0; padding:0; }
 /*.listing-block{background:#fff; height: 730px; padding-top:20px; overflow-y:scroll; margin-left: 20px;}*/
 .listing-block{height: 730px; overflow-y:scroll; margin-left: 20px;}
 
+.listing-block-list{height: 500px; overflow-y:scroll; margin-left: 0px;}
+
 
 .map-box{background-color:#A3CCFF;}
 
+.results-list {
+  /*margin: 1em auto;*/
+  width: 110%;
+  max-width: 680px;
+  background: #fff;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
 
 .results {
-  margin: 2em auto;
+  margin: 1em auto;
   width: 90%;
   max-width: 680px;
   background: #fff;
@@ -243,7 +298,7 @@ body { margin:0; padding:0; }
     Buttons
 *******************/
 
-.btn {
+.love {
   box-shadow: 1px 1px 0 rgba(255,255,255,0.5) inset;
   border-radius: 3px;
   border: 1px solid;
@@ -261,10 +316,10 @@ body { margin:0; padding:0; }
 /*
  * Counter button style
  */
-.btn-counter { margin-right: 39px; }
-.btn-counter:after,
-.btn-counter:hover:after { text-shadow: none; }
-.btn-counter:after {
+.love-counter { margin-right: 39px; }
+.love-counter:after,
+.love-counter:hover:after { text-shadow: none; }
+.love-counter:after {
   border-radius: 3px;
   border: 1px solid #d3d3d3;
   background-color: #eee;
@@ -281,22 +336,22 @@ body { margin:0; padding:0; }
 /*
  * Custom styles
  */
-.btn {
+.love {
   background-color: #dbdbdb;
   border-color: #bbb;
   color: #666;
 }
-.btn:hover,
-.btn.active {
+.love:hover,
+.love.active {
   text-shadow: 0 1px 0 #b12f27;
   background-color: #f64136;
   border-color: #b12f27;
 }
-.btn:active { box-shadow: 0 0 5px 3px rgba(0,0,0,0.2) inset; }
-.btn span { color: #f64136; }
-.btn:hover, .btn:hover span,
-.btn.active, .btn.active span { color: #eeeeee; }
-.btn:active span {
+.love:active { box-shadow: 0 0 5px 3px rgba(0,0,0,0.2) inset; }
+.love span { color: #f64136; }
+.love:hover, .love:hover span,
+.love.active, .love.active span { color: #eeeeee; }
+.love:active span {
   color: #b12f27;
   text-shadow: 0 1px 0 rgba(255,255,255,0.3);
 }
