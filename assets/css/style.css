@@ -11,64 +11,6 @@ body, html{
   background-color: black;
 }
 
-.pimg1, .pimg2, .pimg3, .pimg4, .pimg5{
-  position:relative;
-  /*opacity:0.90;*/
-  background-position:center;
-  background-size:cover;
-  background-repeat:no-repeat;
-  background-attachment:fixed;
-}
-
-.pimg1{
-  background-image:url('../images/main-bg.jpg');
-  min-height:100%;
-}
-
-.pimg2{
-  background-image:url('../images/aboutMe3.jpg');
-  min-height:250%;
-  opacity: 0;
-  transition: all 500ms ease-in;
-}
-
-.pimg2-animate{
-    opacity: 1;
-}
-
-.pimg3{
-/*  background-image:url('../images/expbg.jpg');*/
-  background-image:url('../images/blur.png');
-  min-height:100%;
-}
-
-.pimg4{
-  background-image:url('../images/main-bg.jpg');
-  min-height:85%;
-}
-
-.pimg5{
-  background-image:url('../images/blur.png');
-  min-height:100%;
-}
-
-.section{
-    text-align:center;
-/*    padding:25px 50px;*/
-    background-color:#595959;
-    color:#ddd;
-    height: 50px;
-    margin-top: -20px;
-}
-
-.section h2 {
-    font-size: 40px;
-}
-
-.row {
-  width: 100%;
-}
-
 
 /*******************
 		NAV	
@@ -121,8 +63,48 @@ body, html{
     GEOLOCATION
 *********************/
 
+/*.mapboxgl-ctrl {
+  visibility: hidden !important;
+}*/
+
+.mapboxgl-ctrl-bottom-right {
+  visibility: hidden !important;
+}
+
+.mapboxgl-ctrl-bottom-left {
+  visibility: hidden !important;
+}
+
 body { margin:0; padding:0; }
 #map { position:absolute; top:0; bottom:0; width:100%; }
+
+.geocoder {
+    /*position:absolute;*/
+    /*z-index:1;*/
+    width:100%;
+/*    left:50%;*/
+    margin-left:25%;
+    top:20px;
+}
+.mapboxgl-ctrl-geocoder { min-width:100%; }
+
+.marker {
+  background-image: url('https://tendernet.com.au/wp-content/uploads/2016/06/cropped-Pinpoint-1-270x270.png');
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.mapboxgl-popup {
+  max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
 
 /*******************
     BUTTON
@@ -170,7 +152,7 @@ a.button2:hover {
 /*.listing-block{background:#fff; height: 730px; padding-top:20px; overflow-y:scroll; margin-left: 20px;}*/
 .listing-block{height: 730px; overflow-y:scroll; margin-left: 20px;}
 
-.listing-block-list{height: 500px; overflow-y:scroll; margin-left: 0px;}
+.listing-block-list{height: 500px; overflow-y:hidden; margin-left: 0px;}
 
 
 .map-box{background-color:#A3CCFF;}
@@ -200,6 +182,7 @@ a.button2:hover {
   border-bottom-right-radius: 3px;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  /*margin-left: 0px;*/
 }
 .results .featured-image {
   position: relative;
